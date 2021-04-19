@@ -1,0 +1,20 @@
+{
+    "Comment": "Atlas",
+    "StartAt": "Check-Atlas",
+    "States": {
+      "Check-Atlas": {
+        "Type": "Task",
+        "Resource": "${atlas-check-function-arn}",
+        "Next": "Config-Atlas"
+      },
+      "Config-Atlas": {
+        "Type": "Task",
+        "Resource": "${config-atlas-function-arn}",
+        "Next": "Done"
+      },
+      "Done": {
+        "Type": "Pass",
+        "End": true
+      }
+    }
+  }

@@ -1,0 +1,1 @@
+  cron(0 7 ? * MON-FRI *)
