@@ -1,4 +1,3 @@
-import os
 from pymongo import MongoClient
 from mongoconst import DBS
 from mongoconst import DUMMY
